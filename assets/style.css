@@ -1,0 +1,275 @@
+/* ===== Reset e Configuração Global ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #464242;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Tipografia ===== */
+h1 {
+    font-size: 30px;
+    color: #444;
+    font-weight: 700;
+    margin-bottom: 20px; /* Removido margem negativa */
+}
+
+.inicio {
+    margin-top: 20px !important; 
+    text-align: center;
+}
+
+.inicio h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #444;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* ===== Links ===== */
+a {
+    color: #3f402a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+/* ===== Botões ===== */
+.botao {
+    background-color: #637365;
+    color: #D9CEAD;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #4a5a4b;
+    color: #f0f0d8;
+}
+
+.botao:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(99, 115, 101, 0.2);
+}
+
+/* ===== Layout ===== */
+section {
+    padding: 40px 20px 20px;
+}
+
+/* ===== Navegação ===== */
+nav {
+    background-color: #637365;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 6px;
+    color: #D9CEAD;
+}
+
+nav ul li a:hover {
+    background-color: #6a7a6b;
+}
+
+.sobre-container {
+    overflow: hidden; /* mantém o container envolvendo foto e texto */
+    margin-top: 20px;
+}
+
+.foto-sobre {
+    float: left;
+    width: 40%; /* tamanho da área da foto */
+}
+
+.foto-sobre img {
+    width: 100%; /* ocupa toda a largura da área da foto */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.texto-sobre {
+    float: left;
+    width: 56%; /* espaço para o texto ao lado */
+    margin-left: 4%;
+    box-sizing: border-box;
+}
+
+
+/* ===== Curiosidades e Causos ===== */
+.curiosos-container {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.curiosidades,
+.causos {
+    float: left;
+    width: 48%;
+    background-color: #9f9797;
+    padding: 20px;
+    margin-right: 4%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.causos {
+    margin-right: 0;
+    min-height: 372px;
+}
+
+/* ===== Cards do Portfólio (sem flex) ===== */
+.card-container {
+    text-align: center; /* centraliza os cards horizontalmente */
+}
+
+.card {
+    display: inline-block; /* faz os cards ficarem lado a lado */
+    width: 300px;
+    margin: 10px;          /* espaço entre os cards */
+    vertical-align: top;   /* alinha os cards no topo */
+    text-align: center;    /* centraliza conteúdo dentro do card */
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(163, 70, 70, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 15px 0;
+    font-weight: 600;
+    color: #444;
+}
+
+.card a {
+    display: inline-block;
+    margin: 15px 0 20px;
+    padding: 10px 35px;
+    background: #637365;
+    color: rgb(199, 178, 178);
+    text-decoration: none;
+    border-radius: 54px;
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Tabela ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: 700;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #637365;
+    color: #D9CEAD;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer h2 {
+    color: #D9CEAD;
+    margin-bottom: 15px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+
+footer nav ul li a {
+    color: #D9CEAD;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #4a5a4b;
+}
+
+.redes-sociais a {
+    color: #D9CEAD;
+    font-size: 28px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: #4a5a4b;
+}
+footer { background-color: #637365; 
+  color: #D9CEAD; 
+  text-align: center;
+   padding: 30px 20px;
+}

@@ -17,7 +17,7 @@ h1 {
     font-size: 30px;
     color: #444;
     font-weight: 700;
-    margin-bottom: 20px; /* Removido margem negativa */
+    margin-bottom: 20px; 
 }
 
 .inicio {
@@ -105,17 +105,17 @@ nav ul li a:hover {
 }
 
 .sobre-container {
-    overflow: hidden; /* mantém o container envolvendo foto e texto */
+    overflow: hidden; 
     margin-top: 20px;
 }
 
 .foto-sobre {
     float: left;
-    width: 40%; /* tamanho da área da foto */
+    width: 40%; 
 }
 
 .foto-sobre img {
-    width: 100%; /* ocupa toda a largura da área da foto */
+    width: 100%; 
     height: auto;
     border-radius: 10px;
     object-fit: cover;
@@ -123,7 +123,7 @@ nav ul li a:hover {
 
 .texto-sobre {
     float: left;
-    width: 56%; /* espaço para o texto ao lado */
+    width: 56%; 
     margin-left: 4%;
     box-sizing: border-box;
 }
@@ -155,15 +155,15 @@ nav ul li a:hover {
 
 /* ===== Cards do Portfólio (sem flex) ===== */
 .card-container {
-    text-align: center; /* centraliza os cards horizontalmente */
+    text-align: center; 
 }
 
 .card {
-    display: inline-block; /* faz os cards ficarem lado a lado */
+    display: inline-block; 
     width: 300px;
-    margin: 10px;          /* espaço entre os cards */
-    vertical-align: top;   /* alinha os cards no topo */
-    text-align: center;    /* centraliza conteúdo dentro do card */
+    margin: 10px;          
+    vertical-align: top;   
+    text-align: center;    
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(163, 70, 70, 0.1);
     overflow: hidden;

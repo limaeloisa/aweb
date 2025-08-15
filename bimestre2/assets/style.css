@@ -258,19 +258,23 @@ footer nav ul li a {
 footer nav ul li a:hover {
     color: #4a5a4b;
 }
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
 
-.redes-sociais a {
+.redes-sociais button {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #4a5a4b;
     color: #D9CEAD;
-    font-size: 28px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
-.redes-sociais a:hover {
-    color: #4a5a4b;
-}
-footer { background-color: #637365; 
-  color: #D9CEAD; 
-  text-align: center;
-   padding: 30px 20px;
+.redes-sociais button:hover {
+    background-color: #3c4a3d;
 }

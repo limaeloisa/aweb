@@ -227,54 +227,28 @@ table tr:nth-child(even) {
 
 /* ===== Footer ===== */
 footer {
-    background-color: #637365;
-    color: #D9CEAD;
-    text-align: center;
-    padding: 30px 20px;
+    background: #637365;
+    color: #ffffff;
+    padding: 20px 10px;
 }
 
-footer h2 {
-    color: #D9CEAD;
-    margin-bottom: 15px;
+.footer-container {
+    display: flex;
+    gap: 50px; /* espaço entre mapa e redes sociais */
 }
 
 footer nav ul {
     list-style: none;
     padding: 0;
-    margin: 0 auto 20px;
-    text-align: center;
 }
 
 footer nav ul li {
-    display: inline-block;
+    margin-bottom: 8px;
 }
 
-footer nav ul li a {
-    color: #D9CEAD;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
 
-footer nav ul li a:hover {
-    color: #4a5a4b;
-}
-.redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
-}
-
-.redes-sociais button {
-    font-size: 12px;
-    padding: 4px 8px;
-    border-radius: 5px;
-    background-color: #4a5a4b;
-    color: #D9CEAD;
-    border: none;
-    cursor: pointer;
-}
-
-.redes-sociais button:hover {
-    background-color: #3c4a3d;
+.redes-sociais a {
+    color: #3f402a;
+    margin-right: 10px; /* espaço entre os ícones */
+    text-decoration: none;
 }
